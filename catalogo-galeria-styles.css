@@ -693,6 +693,25 @@
     margin: 0;
 }
 
+.desfiles-description {
+    max-width: 1000px;
+    margin: 0 auto 50px auto;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.desfiles-description p {
+    color: white;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;
+    text-indent: 30px;
+}
+
+.desfiles-description p:last-child {
+    margin-bottom: 0;
+}
+
 /* Desfiles Carousel */
 .desfiles-carousel {
     position: relative;
@@ -1082,6 +1101,16 @@
     .next-desfiles-btn {
         right: -25px;
     }
+    
+    .desfiles-description {
+        max-width: 900px;
+        margin-bottom: 40px;
+    }
+    
+    .desfiles-description p {
+        font-size: 15px;
+        text-indent: 25px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1208,6 +1237,17 @@
     }
     .next-desfiles-btn {
         right: -22px;
+    }
+    
+    .desfiles-description {
+        max-width: 800px;
+        margin-bottom: 35px;
+    }
+    
+    .desfiles-description p {
+        font-size: 14px;
+        text-indent: 20px;
+        margin-bottom: 15px;
     }
 }
 
@@ -1336,6 +1376,17 @@
     .next-desfiles-btn {
         right: -20px;
     }
+    
+    .desfiles-description {
+        max-width: 700px;
+        margin-bottom: 30px;
+    }
+    
+    .desfiles-description p {
+        font-size: 13px;
+        text-indent: 15px;
+        margin-bottom: 12px;
+    }
 }
 
 @media (max-width: 320px) {
@@ -1457,5 +1508,16 @@
     }
     .next-desfiles-btn {
         right: -17px;
+    }
+    
+    .desfiles-description {
+        max-width: 600px;
+        margin-bottom: 25px;
+    }
+    
+    .desfiles-description p {
+        font-size: 12px;
+        text-indent: 10px;
+        margin-bottom: 10px;
     }
 }
