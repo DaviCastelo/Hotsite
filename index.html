@@ -369,34 +369,65 @@
                 <h2>CATÁLOGO MOSAICO</h2>
             </div>
             
-            <div class="catalogo-grid">
-                <div class="catalogo-item">
-                    <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Produto 1" class="catalogo-image">
+            <div class="catalogo-carousel">
+                <button class="catalogo-btn prev-catalogo-btn" id="prevCatalogoBtn">‹</button>
+                
+                <div class="catalogo-container">
+                    <!-- Página do vídeo -->
+                    <div class="catalogo-page video-page active" id="videoPage">
+                        <div class="video-container">
+                            <a href="https://www.youtube.com/watch?v=T9rdFe3Bm4E" target="_blank" class="video-thumbnail-link">
+                                <div class="video-thumbnail">
+                                    <img src="https://img.youtube.com/vi/T9rdFe3Bm4E/maxresdefault.jpg" 
+                                         alt="Vídeo Reciclocidades" 
+                                         class="video-thumbnail-image">
+                                    <div class="play-button">
+                                        <div class="play-icon">▶</div>
+                                    </div>
+                                    <div class="video-overlay">
+                                        <div class="youtube-logo">
+                                            <svg viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                                        </div>
+                                        <div class="video-text">Assistir no YouTube</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="video-button-container">
+                            <button class="video-button" id="videoButton">VER CATÁLOGO</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Páginas do catálogo -->
+                    <div class="catalogo-page catalogo-pages" id="catalogoPages">
+                        <div class="catalogo-grid" id="catalogoGrid">
+                            <!-- As imagens serão carregadas dinamicamente via JavaScript -->
+                        </div>
+                    </div>
                 </div>
-                <div class="catalogo-item">
-                    <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Produto 2" class="catalogo-image">
-                </div>
-                <div class="catalogo-item">
-                    <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Produto 3" class="catalogo-image">
-                </div>
-                <div class="catalogo-item">
-                    <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Produto 4" class="catalogo-image">
-                </div>
-                <div class="catalogo-item">
-                    <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Produto 5" class="catalogo-image">
-                </div>
-                <div class="catalogo-item">
-                    <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Produto 6" class="catalogo-image">
-                </div>
-                <div class="catalogo-item">
-                    <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Produto 7" class="catalogo-image">
-                </div>
-                <div class="catalogo-item">
-                    <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Produto 8" class="catalogo-image">
-                </div>
+                
+                <button class="catalogo-btn next-catalogo-btn" id="nextCatalogoBtn">›</button>
+            </div>
+            
+            <div class="catalogo-indicators">
+                <span id="catalogoPageInfo">1 de 8</span>
             </div>
         </div>
     </section>
+
+    <!-- Modal para visualização ampliada das imagens -->
+    <div class="image-modal" id="imageModal">
+        <div class="modal-content">
+            <span class="modal-close" id="modalClose">&times;</span>
+            <img class="modal-image" id="modalImage" src="" alt="">
+            <div class="modal-nav">
+                <button class="modal-btn prev-modal-btn" id="prevModalBtn">‹</button>
+                <button class="modal-btn next-modal-btn" id="nextModalBtn">›</button>
+            </div>
+        </div>
+    </div>
 
     <!-- Wave transition from orange to blue -->
     <div class="wave-transition-galeria">
@@ -409,6 +440,47 @@
                 <img src="Hotsite Fotos/decorativo-1-hotsite.png" alt="Gema Verde">
             </div>
             <div class="wave-decorative gem-pink-transition-galeria">
+                <img src="Hotsite Fotos/decorativo-2.png" alt="Gema Rosa">
+            </div>
+        </div>
+    </div>
+
+    <!-- Desfiles Section -->
+    <section class="desfiles-section">
+        <div class="desfiles-content">
+            <div class="desfiles-title">
+                <h2>DESFILES RECICLOCIDADES</h2>
+            </div>
+            
+            <div class="desfiles-carousel">
+                <button class="desfiles-btn prev-desfiles-btn" id="prevDesfilesBtn">‹</button>
+                
+                <div class="desfiles-container">
+                    <div class="desfiles-grid" id="desfilesGrid">
+                        <!-- As imagens serão carregadas dinamicamente via JavaScript -->
+                    </div>
+                </div>
+                
+                <button class="desfiles-btn next-desfiles-btn" id="nextDesfilesBtn">›</button>
+            </div>
+            
+            <div class="desfiles-indicators">
+                <span id="desfilesPageInfo">1 de 3</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave transition from blue to lighter blue -->
+    <div class="wave-transition-desfiles">
+        <div class="wave-shape-transition-desfiles"></div>
+        <div class="wave-decoratives-transition-desfiles">
+            <div class="wave-decorative flower-transition-desfiles">
+                <img src="Hotsite Fotos/decorativo-4.png" alt="Flor">
+            </div>
+            <div class="wave-decorative gem-green-transition-desfiles">
+                <img src="Hotsite Fotos/decorativo-1-hotsite.png" alt="Gema Verde">
+            </div>
+            <div class="wave-decorative gem-pink-transition-desfiles">
                 <img src="Hotsite Fotos/decorativo-2.png" alt="Gema Rosa">
             </div>
         </div>
@@ -560,6 +632,374 @@
                 currentIndex = (currentIndex + 1) % depoimentoCards.length;
                 showDepoimento(currentIndex);
             });
+            
+            // Carrossel do catálogo mosaico
+            const catalogoImages = [
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (1).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (2).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (3).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (4).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (5).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (6).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (7).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (8).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (9).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (10).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (11).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (12).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (13).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (14).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (15).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (16).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (17).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (18).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (19).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (20).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (21).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (22).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (23).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (24).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (25).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (26).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (27).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (28).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (29).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (30).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (31).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (32).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (33).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (34).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (35).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (36).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (37).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (38).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (39).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (40).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (41).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (42).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (43).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (44).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (45).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (46).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (47).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (48).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (49).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (50).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (51).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (52).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (53).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (54).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (55).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (56).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (57).jpg',
+                'Hotsite Fotos/20220223_Catálogo Reciclocidades/20220223_Catálogo Reciclocidades (58).jpg'
+            ];
+            
+            const catalogoGrid = document.getElementById('catalogoGrid');
+            const prevCatalogoBtn = document.getElementById('prevCatalogoBtn');
+            const nextCatalogoBtn = document.getElementById('nextCatalogoBtn');
+            const catalogoPageInfo = document.getElementById('catalogoPageInfo');
+            const videoPage = document.getElementById('videoPage');
+            const catalogoPages = document.getElementById('catalogoPages');
+            const videoButton = document.getElementById('videoButton');
+            
+            let catalogoCurrentPage = 0;
+            let isVideoPage = true;
+            const itemsPerPage = 8;
+            const totalPages = Math.ceil(catalogoImages.length / itemsPerPage);
+            
+            function showVideoPage() {
+                videoPage.classList.add('active');
+                catalogoPages.classList.remove('active');
+                isVideoPage = true;
+                catalogoPageInfo.textContent = 'Vídeo';
+                prevCatalogoBtn.style.display = 'none';
+                nextCatalogoBtn.style.display = 'none';
+            }
+            
+            function showCatalogoPage(page) {
+                videoPage.classList.remove('active');
+                catalogoPages.classList.add('active');
+                isVideoPage = false;
+                
+                catalogoGrid.innerHTML = '';
+                const startIndex = page * itemsPerPage;
+                const endIndex = Math.min(startIndex + itemsPerPage, catalogoImages.length);
+                
+                for (let i = startIndex; i < endIndex; i++) {
+                    const catalogoItem = document.createElement('div');
+                    catalogoItem.className = 'catalogo-item';
+                    
+                    const img = document.createElement('img');
+                    img.src = catalogoImages[i];
+                    img.alt = `Produto ${i + 1}`;
+                    img.className = 'catalogo-image';
+                    
+                    catalogoItem.appendChild(img);
+                    catalogoGrid.appendChild(catalogoItem);
+                }
+                
+                catalogoPageInfo.textContent = `${page + 1} de ${totalPages}`;
+                
+                // Atualizar estado dos botões
+                prevCatalogoBtn.style.display = 'flex';
+                nextCatalogoBtn.style.display = 'flex';
+                prevCatalogoBtn.disabled = page === 0;
+                nextCatalogoBtn.disabled = page === totalPages - 1;
+                
+                // Adicionar listeners para as imagens
+                setTimeout(addImageClickListeners, 100);
+            }
+            
+            prevCatalogoBtn.addEventListener('click', function() {
+                if (isVideoPage) {
+                    // Se estiver na página do vídeo, não fazer nada
+                    return;
+                }
+                if (catalogoCurrentPage > 0) {
+                    catalogoCurrentPage--;
+                    showCatalogoPage(catalogoCurrentPage);
+                } else {
+                    // Se estiver na primeira página do catálogo, voltar para o vídeo
+                    showVideoPage();
+                }
+            });
+            
+            nextCatalogoBtn.addEventListener('click', function() {
+                if (isVideoPage) {
+                    // Se estiver na página do vídeo, ir para o catálogo
+                    catalogoCurrentPage = 0;
+                    showCatalogoPage(catalogoCurrentPage);
+                } else if (catalogoCurrentPage < totalPages - 1) {
+                    catalogoCurrentPage++;
+                    showCatalogoPage(catalogoCurrentPage);
+                }
+            });
+            
+            // Botão para ir do vídeo para o catálogo
+            videoButton.addEventListener('click', function() {
+                catalogoCurrentPage = 0;
+                showCatalogoPage(catalogoCurrentPage);
+            });
+            
+            
+            // Função para configurar o link do vídeo
+            function setupVideoLink() {
+                const videoLink = document.querySelector('.video-thumbnail-link');
+                if (videoLink) {
+                    console.log('Link do vídeo encontrado e configurado');
+                    videoLink.addEventListener('click', function(e) {
+                        console.log('Clique no vídeo detectado');
+                        e.preventDefault();
+                        window.open('https://www.youtube.com/watch?v=T9rdFe3Bm4E', '_blank');
+                    });
+                    
+                    // Adicionar indicador visual de que é clicável
+                    videoLink.style.cursor = 'pointer';
+                    videoLink.title = 'Clique para assistir no YouTube';
+                    return true;
+                } else {
+                    console.log('Link do vídeo não encontrado, tentando novamente...');
+                    return false;
+                }
+            }
+            
+            // Tentar configurar o link imediatamente
+            if (!setupVideoLink()) {
+                // Se não encontrou, tentar novamente após um delay
+                setTimeout(setupVideoLink, 1000);
+            }
+            
+            // Inicializar com a página do vídeo
+            showVideoPage();
+            
+            // Modal para visualização ampliada
+            const imageModal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalClose = document.getElementById('modalClose');
+            const prevModalBtn = document.getElementById('prevModalBtn');
+            const nextModalBtn = document.getElementById('nextModalBtn');
+            
+            let currentModalIndex = 0;
+            let currentPageImages = [];
+            
+            function openModal(imageIndex) {
+                currentModalIndex = imageIndex;
+                currentPageImages = catalogoImages.slice(
+                    catalogoCurrentPage * itemsPerPage,
+                    Math.min((catalogoCurrentPage + 1) * itemsPerPage, catalogoImages.length)
+                );
+                
+                const actualIndex = imageIndex - (catalogoCurrentPage * itemsPerPage);
+                modalImage.src = currentPageImages[actualIndex];
+                modalImage.alt = `Produto ${imageIndex + 1}`;
+                
+                imageModal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+                
+                updateModalButtons();
+            }
+            
+            function closeModal() {
+                imageModal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+            
+            function updateModalButtons() {
+                const actualIndex = currentModalIndex - (catalogoCurrentPage * itemsPerPage);
+                prevModalBtn.style.display = actualIndex > 0 ? 'flex' : 'none';
+                nextModalBtn.style.display = actualIndex < currentPageImages.length - 1 ? 'flex' : 'none';
+            }
+            
+            function showModalImage(direction) {
+                const actualIndex = currentModalIndex - (catalogoCurrentPage * itemsPerPage);
+                let newIndex = actualIndex + direction;
+                
+                if (newIndex >= 0 && newIndex < currentPageImages.length) {
+                    currentModalIndex = catalogoCurrentPage * itemsPerPage + newIndex;
+                    modalImage.src = currentPageImages[newIndex];
+                    modalImage.alt = `Produto ${currentModalIndex + 1}`;
+                    updateModalButtons();
+                }
+            }
+            
+            // Event listeners para o modal
+            modalClose.addEventListener('click', closeModal);
+            
+            imageModal.addEventListener('click', function(e) {
+                if (e.target === imageModal) {
+                    closeModal();
+                }
+            });
+            
+            prevModalBtn.addEventListener('click', function() {
+                showModalImage(-1);
+            });
+            
+            nextModalBtn.addEventListener('click', function() {
+                showModalImage(1);
+            });
+            
+            // Fechar modal com tecla ESC
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && imageModal.style.display === 'flex') {
+                    closeModal();
+                }
+            });
+            
+            // Adicionar event listeners para as imagens do catálogo
+            function addImageClickListeners() {
+                const catalogoItems = document.querySelectorAll('.catalogo-item');
+                catalogoItems.forEach((item, index) => {
+                    const img = item.querySelector('.catalogo-image');
+                    if (img) {
+                        img.style.cursor = 'pointer';
+                        img.addEventListener('click', function() {
+                            const globalIndex = catalogoCurrentPage * itemsPerPage + index;
+                            openModal(globalIndex);
+                        });
+                    }
+                });
+            }
+            
+            // Adicionar listeners após carregar cada página
+            const originalShowCatalogoPage = showCatalogoPage;
+            showCatalogoPage = function(page) {
+                originalShowCatalogoPage(page);
+                setTimeout(addImageClickListeners, 100);
+            };
+            
+            // Adicionar listeners na inicialização
+            setTimeout(addImageClickListeners, 100);
+            
+            // Carrossel de desfiles
+            const desfilesImages = [
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20241204_Reciclocidades 15 anos Coleção Mosaico_Fotos Leandro Bayma-6318.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20241204_Reciclocidades 15 anos Coleção Mosaico_Fotos Leandro Bayma-6387.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20241204_Reciclocidades 15 anos Coleção Mosaico_Fotos Leandro Bayma-6389.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20241204_Reciclocidades 15 anos Coleção Mosaico_Fotos Leandro Bayma-6401.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20241204_Reciclocidades 15 anos Coleção Mosaico_Fotos Leandro Bayma-6415.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20241204_Reciclocidades 15 anos Coleção Mosaico_Fotos Leandro Bayma-6419.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20250721_Aniversário Cagece 54 anos_Foto Rayane Mainara_109.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20250721_Aniversário Cagece 54 anos_Foto Rayane Mainara_61.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/20250721_Aniversário Cagece 54 anos_Foto Rayane Mainara_92.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/Desfile Reciclocidades_Foto Rayane Mainara_13.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/Desfile Reciclocidades_Foto Rayane Mainara_19.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/Desfile Reciclocidades_Foto Rayane Mainara_2.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/Desfile Reciclocidades_Foto Rayane Mainara_23.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/Desfile Reciclocidades_Foto Rayane Mainara_25.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/Desfile Reciclocidades_Foto Rayane Mainara.jpg',
+                'Hotsite Fotos/20251006_Seleção de fotos de desfiles Reciclocidades/ensaio revista cagece reciclocidades_foto rayane mainara_53.jpg'
+            ];
+            
+            const desfilesGrid = document.getElementById('desfilesGrid');
+            const prevDesfilesBtn = document.getElementById('prevDesfilesBtn');
+            const nextDesfilesBtn = document.getElementById('nextDesfilesBtn');
+            const desfilesPageInfo = document.getElementById('desfilesPageInfo');
+            
+            let desfilesCurrentPage = 0;
+            const desfilesItemsPerPage = 8;
+            const desfilesTotalPages = Math.ceil(desfilesImages.length / desfilesItemsPerPage);
+            
+            function showDesfilesPage(page) {
+                desfilesGrid.innerHTML = '';
+                const startIndex = page * desfilesItemsPerPage;
+                const endIndex = Math.min(startIndex + desfilesItemsPerPage, desfilesImages.length);
+                
+                for (let i = startIndex; i < endIndex; i++) {
+                    const desfilesItem = document.createElement('div');
+                    desfilesItem.className = 'desfiles-item';
+                    
+                    const img = document.createElement('img');
+                    img.src = desfilesImages[i];
+                    img.alt = `Desfile ${i + 1}`;
+                    img.className = 'desfiles-image';
+                    
+                    desfilesItem.appendChild(img);
+                    desfilesGrid.appendChild(desfilesItem);
+                }
+                
+                desfilesPageInfo.textContent = `${page + 1} de ${desfilesTotalPages}`;
+                
+                // Atualizar estado dos botões
+                prevDesfilesBtn.disabled = page === 0;
+                nextDesfilesBtn.disabled = page === desfilesTotalPages - 1;
+                
+                // Adicionar listeners para as imagens
+                setTimeout(addDesfilesImageClickListeners, 100);
+            }
+            
+            prevDesfilesBtn.addEventListener('click', function() {
+                if (desfilesCurrentPage > 0) {
+                    desfilesCurrentPage--;
+                    showDesfilesPage(desfilesCurrentPage);
+                }
+            });
+            
+            nextDesfilesBtn.addEventListener('click', function() {
+                if (desfilesCurrentPage < desfilesTotalPages - 1) {
+                    desfilesCurrentPage++;
+                    showDesfilesPage(desfilesCurrentPage);
+                }
+            });
+            
+            // Adicionar event listeners para as imagens dos desfiles
+            function addDesfilesImageClickListeners() {
+                const desfilesItems = document.querySelectorAll('.desfiles-item');
+                desfilesItems.forEach((item, index) => {
+                    const img = item.querySelector('.desfiles-image');
+                    if (img) {
+                        img.style.cursor = 'pointer';
+                        img.addEventListener('click', function() {
+                            const globalIndex = desfilesCurrentPage * desfilesItemsPerPage + index;
+                            openModal(globalIndex);
+                        });
+                    }
+                });
+            }
+            
+            // Inicializar primeira página dos desfiles
+            showDesfilesPage(0);
         });
     </script>
 </body>
