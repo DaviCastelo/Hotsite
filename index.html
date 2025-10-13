@@ -6,7 +6,6 @@
     <title>Programa Reciclocidades - Cagece</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="additional-styles.css">
-    <link rel="stylesheet" href="depoimentos-styles.css">
     <link rel="stylesheet" href="catalogo-galeria-styles.css">
     <link rel="stylesheet" href="footer-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
@@ -28,12 +27,9 @@
                 </button>
                 <ul class="nav-menu" id="navMenu">
                     <li><a href="#historia">História</a></li>
-                    <li><a href="#impacto">Impacto Socioambiental</a></li>
-                    <li><a href="#depoimentos">Depoimentos</a></li>
-                    <li><a href="#colecao">Coleção Mosaico</a></li>
-                    <li><a href="#galeria">Galeria de fotos</a></li>
-                    <li><a href="#produtos">Produtos</a></li>
-                    <li><a href="#reconhecimentos">Reconhecimentos e Premiações</a></li>
+                    <li><a href="#impacto">Area de atuação</a></li>
+                    <li><a href="#catalogo">CATÁLOGO MOSAICO</a></li>
+                    <li><a href="#desfiles">DESFILES RECICLOCIDADES</a></li>
                 </ul>
             </nav>
         </div>
@@ -84,7 +80,7 @@
     </div>
 
     <!-- História Section -->
-    <section class="historia-section">
+    <section id="historia" class="historia-section">
         <div class="historia-title">
             <h2>História</h2>
         </div>
@@ -104,7 +100,7 @@
     </section>
 
     <!-- Área de Atuação Section -->
-    <section class="area-atuacao-section">
+    <section id="impacto" class="area-atuacao-section">
         <div class="area-atuacao-content">
             <div class="area-atuacao-header">
                 <img src="Hotsite Fotos/Area-de-Atuacao.png" alt="Área de Atuação" class="area-atuacao-title">
@@ -254,97 +250,6 @@
         </div>
     </section>
 
-    <!-- Wave transition from #0698dc to lighter blue -->
-    <div class="wave-transition-depoimentos">
-        <div class="wave-shape-transition-depoimentos"></div>
-        <div class="wave-decoratives-transition-depoimentos">
-            <div class="wave-decorative flower-transition-depoimentos">
-                <img src="Hotsite Fotos/decorativo-4.png" alt="Flor">
-            </div>
-            <div class="wave-decorative gem-green-transition-depoimentos">
-                <img src="Hotsite Fotos/decorativo-1-hotsite.png" alt="Gema Verde">
-            </div>
-            <div class="wave-decorative gem-pink-transition-depoimentos">
-                <img src="Hotsite Fotos/decorativo-2.png" alt="Gema Rosa">
-            </div>
-        </div>
-    </div>
-
-    <!-- Depoimentos Section -->
-    <section class="depoimentos-section">
-        <div class="depoimentos-content">
-            <div class="depoimentos-title">
-                <h2>DEPOIMENTOS DAS BENEFICIADAS</h2>
-            </div>
-            
-            <div class="depoimentos-carousel">
-                <button class="carousel-btn prev-btn" id="prevBtn">‹</button>
-                
-                <div class="depoimentos-container">
-                    <div class="depoimento-card active">
-                        <div class="video-thumbnail">
-                            <img src="Hotsite Fotos/foto-artesa-reciclocidades.png" alt="Depoimento" class="video-image">
-                            <div class="play-button">▶</div>
-                            <div class="video-controls">
-                                <span class="sound-icon">🔊</span>
-                                <span class="settings-icon">⚙</span>
-                            </div>
-                        </div>
-                        <div class="depoimento-info">
-                            <div class="user-avatar">
-                                <div class="avatar-icon">👤</div>
-                            </div>
-                            <div class="user-info">
-                                <div class="user-name">Nome sobrenome</div>
-                                <div class="user-role">Artesã do Reciclocidades</div>
-                            </div>
-                        </div>
-                        <div class="heart-icon">
-                            <img src="Hotsite Fotos/icone-coracao.png" alt="Coração">
-                        </div>
-                    </div>
-                    
-                    <div class="depoimento-card">
-                        <div class="depoimento-text">
-                            <p>"O Reciclocidades transformou minha vida e me ajudou muito com o artesanato. Hoje graças à Cagece posso sustentar minha família."</p>
-                        </div>
-                        <div class="depoimento-info">
-                            <div class="user-avatar">
-                                <div class="avatar-icon">👤</div>
-                            </div>
-                            <div class="user-info">
-                                <div class="user-name">Maria Silva</div>
-                                <div class="user-role">Artesã do Reciclocidades</div>
-                            </div>
-                        </div>
-                        <div class="heart-icon">
-                            <img src="Hotsite Fotos/balao-coracao.png" alt="Balão Coração">
-                        </div>
-                    </div>
-                    
-                    <div class="depoimento-card">
-                        <div class="depoimento-text">
-                            <p>"Através do programa aprendi a reciclar e criar produtos únicos. É uma oportunidade incrível de crescimento pessoal e profissional."</p>
-                        </div>
-                        <div class="depoimento-info">
-                            <div class="user-avatar">
-                                <div class="avatar-icon">👤</div>
-                            </div>
-                            <div class="user-info">
-                                <div class="user-name">Ana Costa</div>
-                                <div class="user-role">Artesã do Reciclocidades</div>
-                            </div>
-                        </div>
-                        <div class="heart-icon">
-                            <img src="Hotsite Fotos/balao-coracao.png" alt="Balão Coração">
-                        </div>
-                    </div>
-                </div>
-                
-                <button class="carousel-btn next-btn" id="nextBtn">›</button>
-            </div>
-        </div>
-    </section>
 
     <!-- Wave transition from #4a90e2 to orange -->
     <div class="wave-transition-catalogo">
@@ -363,7 +268,7 @@
     </div>
 
     <!-- Catálogo Mosaico Section -->
-    <section class="catalogo-section">
+    <section id="catalogo" class="catalogo-section">
         <div class="catalogo-content">
             <div class="catalogo-title">
                 <h2>CATÁLOGO MOSAICO</h2>
@@ -392,24 +297,27 @@
                                         </div>
                                         <div class="video-text">Assistir no YouTube</div>
                                     </div>
-                                </div>
+                </div>
                             </a>
-                        </div>
+                </div>
                         <div class="video-button-container">
                             <button class="video-button" id="videoButton">VER CATÁLOGO</button>
-                        </div>
-                    </div>
+                </div>
+                </div>
                     
                     <!-- Páginas do catálogo -->
                     <div class="catalogo-page catalogo-pages" id="catalogoPages">
                         <div class="catalogo-grid" id="catalogoGrid">
                             <!-- As imagens serão carregadas dinamicamente via JavaScript -->
                         </div>
-                    </div>
+                        <div class="back-to-video-container">
+                            <button class="back-to-video-btn" id="backToVideoBtn">VOLTAR</button>
+                </div>
+                </div>
                 </div>
                 
                 <button class="catalogo-btn next-catalogo-btn" id="nextCatalogoBtn">›</button>
-            </div>
+                </div>
             
             <div class="catalogo-indicators">
                 <span id="catalogoPageInfo">1 de 8</span>
@@ -429,24 +337,9 @@
         </div>
     </div>
 
-    <!-- Wave transition from orange to blue -->
-    <div class="wave-transition-galeria">
-        <div class="wave-shape-transition-galeria"></div>
-        <div class="wave-decoratives-transition-galeria">
-            <div class="wave-decorative flower-transition-galeria">
-                <img src="Hotsite Fotos/decorativo-4.png" alt="Flor">
-            </div>
-            <div class="wave-decorative gem-green-transition-galeria">
-                <img src="Hotsite Fotos/decorativo-1-hotsite.png" alt="Gema Verde">
-            </div>
-            <div class="wave-decorative gem-pink-transition-galeria">
-                <img src="Hotsite Fotos/decorativo-2.png" alt="Gema Rosa">
-            </div>
-        </div>
-    </div>
 
     <!-- Desfiles Section -->
-    <section class="desfiles-section">
+    <section id="desfiles" class="desfiles-section">
         <div class="desfiles-content">
             <div class="desfiles-title">
                 <h2>DESFILES RECICLOCIDADES</h2>
@@ -460,7 +353,7 @@
                 <p>Alinhado à proposta de reaproveitamento de resíduos, o evento foi demarcado como "Lixo Zero Aterro", obtendo um aproveitamento e destinação correta de todo o resíduo gerado durante o evento, incluindo o aproveitamento e a compostagem de cerca 94% do material, que ultrapassou a meta inicial, de 90%. A separação dos resíduos foi realizada pela Associação de Catadores do Moura Brasil, comunidade do entorno do equipamento onde foi realizado o desfile.</p>
                 
                 <p>O evento foi apresentado em dezembro de 2024 no Complexo Cultural Estação das Artes, um equipamento do Governo do Estado do Ceará e contou com um público estimado de 500 pessoas, com a presença de autoridades, formadores de opinião e de 60 mulheres beneficiadas pelos grupos produtivos do Programa Reciclocidades.</p>
-            </div>
+                </div>
             
             <div class="desfiles-carousel">
                 <button class="desfiles-btn prev-desfiles-btn" id="prevDesfilesBtn">‹</button>
@@ -468,11 +361,11 @@
                 <div class="desfiles-container">
                     <div class="desfiles-grid" id="desfilesGrid">
                         <!-- As imagens serão carregadas dinamicamente via JavaScript -->
-                    </div>
+                </div>
                 </div>
                 
                 <button class="desfiles-btn next-desfiles-btn" id="nextDesfilesBtn">›</button>
-            </div>
+                </div>
             
             <div class="desfiles-indicators">
                 <span id="desfilesPageInfo">1 de 3</span>
@@ -480,57 +373,6 @@
         </div>
     </section>
 
-    <!-- Wave transition from blue to lighter blue -->
-    <div class="wave-transition-desfiles">
-        <div class="wave-shape-transition-desfiles"></div>
-        <div class="wave-decoratives-transition-desfiles">
-            <div class="wave-decorative flower-transition-desfiles">
-                <img src="Hotsite Fotos/decorativo-4.png" alt="Flor">
-            </div>
-            <div class="wave-decorative gem-green-transition-desfiles">
-                <img src="Hotsite Fotos/decorativo-1-hotsite.png" alt="Gema Verde">
-            </div>
-            <div class="wave-decorative gem-pink-transition-desfiles">
-                <img src="Hotsite Fotos/decorativo-2.png" alt="Gema Rosa">
-            </div>
-        </div>
-    </div>
-
-    <!-- Galeria de Fotos Section -->
-    <section class="galeria-section">
-        <div class="galeria-content">
-            <div class="galeria-title">
-                <h2>GALERIA DE FOTOS</h2>
-            </div>
-            
-            <div class="galeria-grid">
-                <div class="galeria-item">
-                    <img src="Hotsite Fotos/galeria-foto-7.JPG" alt="Galeria 1" class="galeria-image">
-                </div>
-                <div class="galeria-item">
-                    <img src="Hotsite Fotos/galeria-foto-7.JPG" alt="Galeria 2" class="galeria-image">
-                </div>
-                <div class="galeria-item">
-                    <img src="Hotsite Fotos/galeria-foto-7.JPG" alt="Galeria 3" class="galeria-image">
-                </div>
-                <div class="galeria-item">
-                    <img src="Hotsite Fotos/galeria-foto-7.JPG" alt="Galeria 4" class="galeria-image">
-                </div>
-                <div class="galeria-item">
-                    <img src="Hotsite Fotos/galeria-foto-7.JPG" alt="Galeria 5" class="galeria-image">
-                </div>
-                <div class="galeria-item">
-                    <img src="Hotsite Fotos/galeria-foto-7.JPG" alt="Galeria 6" class="galeria-image">
-                </div>
-                <div class="galeria-item">
-                    <img src="Hotsite Fotos/galeria-foto-7.JPG" alt="Galeria 7" class="galeria-image">
-                </div>
-                <div class="galeria-item">
-                    <img src="Hotsite Fotos/galeria-foto-7.JPG" alt="Galeria 8" class="galeria-image">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -618,29 +460,6 @@
                     navMenu.classList.remove('active');
                     menuToggle.classList.remove('active');
                 });
-            });
-            
-            // Carrossel de depoimentos
-            const prevBtn = document.getElementById('prevBtn');
-            const nextBtn = document.getElementById('nextBtn');
-            const depoimentosContainer = document.querySelector('.depoimentos-container');
-            const depoimentoCards = document.querySelectorAll('.depoimento-card');
-            let currentIndex = 0;
-            
-            function showDepoimento(index) {
-                depoimentoCards.forEach((card, i) => {
-                    card.classList.toggle('active', i === index);
-                });
-            }
-            
-            prevBtn.addEventListener('click', function() {
-                currentIndex = (currentIndex - 1 + depoimentoCards.length) % depoimentoCards.length;
-                showDepoimento(currentIndex);
-            });
-            
-            nextBtn.addEventListener('click', function() {
-                currentIndex = (currentIndex + 1) % depoimentoCards.length;
-                showDepoimento(currentIndex);
             });
             
             // Carrossel do catálogo mosaico
@@ -792,6 +611,12 @@
                 showCatalogoPage(catalogoCurrentPage);
             });
             
+            // Botão para voltar do catálogo para o vídeo
+            const backToVideoBtn = document.getElementById('backToVideoBtn');
+            backToVideoBtn.addEventListener('click', function() {
+                showVideoPage();
+            });
+            
             
             // Função para configurar o link do vídeo
             function setupVideoLink() {
@@ -832,17 +657,29 @@
             
             let currentModalIndex = 0;
             let currentPageImages = [];
+            let currentSection = 'catalogo'; // 'catalogo' ou 'desfiles'
             
-            function openModal(imageIndex) {
+            function openModal(imageIndex, section) {
                 currentModalIndex = imageIndex;
-                currentPageImages = catalogoImages.slice(
-                    catalogoCurrentPage * itemsPerPage,
-                    Math.min((catalogoCurrentPage + 1) * itemsPerPage, catalogoImages.length)
-                );
+                currentSection = section;
                 
-                const actualIndex = imageIndex - (catalogoCurrentPage * itemsPerPage);
-                modalImage.src = currentPageImages[actualIndex];
-                modalImage.alt = `Produto ${imageIndex + 1}`;
+                if (section === 'catalogo') {
+                    currentPageImages = catalogoImages.slice(
+                        catalogoCurrentPage * itemsPerPage,
+                        Math.min((catalogoCurrentPage + 1) * itemsPerPage, catalogoImages.length)
+                    );
+                    const actualIndex = imageIndex - (catalogoCurrentPage * itemsPerPage);
+                    modalImage.src = currentPageImages[actualIndex];
+                    modalImage.alt = `Produto ${imageIndex + 1}`;
+                } else if (section === 'desfiles') {
+                    currentPageImages = desfilesImages.slice(
+                        desfilesCurrentPage * desfilesItemsPerPage,
+                        Math.min((desfilesCurrentPage + 1) * desfilesItemsPerPage, desfilesImages.length)
+                    );
+                    const actualIndex = imageIndex - (desfilesCurrentPage * desfilesItemsPerPage);
+                    modalImage.src = currentPageImages[actualIndex];
+                    modalImage.alt = `Desfile ${imageIndex + 1}`;
+                }
                 
                 imageModal.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
@@ -856,19 +693,36 @@
             }
             
             function updateModalButtons() {
-                const actualIndex = currentModalIndex - (catalogoCurrentPage * itemsPerPage);
+                let actualIndex;
+                if (currentSection === 'catalogo') {
+                    actualIndex = currentModalIndex - (catalogoCurrentPage * itemsPerPage);
+                } else if (currentSection === 'desfiles') {
+                    actualIndex = currentModalIndex - (desfilesCurrentPage * desfilesItemsPerPage);
+                }
+                
                 prevModalBtn.style.display = actualIndex > 0 ? 'flex' : 'none';
                 nextModalBtn.style.display = actualIndex < currentPageImages.length - 1 ? 'flex' : 'none';
             }
             
             function showModalImage(direction) {
-                const actualIndex = currentModalIndex - (catalogoCurrentPage * itemsPerPage);
+                let actualIndex;
+                if (currentSection === 'catalogo') {
+                    actualIndex = currentModalIndex - (catalogoCurrentPage * itemsPerPage);
+                } else if (currentSection === 'desfiles') {
+                    actualIndex = currentModalIndex - (desfilesCurrentPage * desfilesItemsPerPage);
+                }
+                
                 let newIndex = actualIndex + direction;
                 
                 if (newIndex >= 0 && newIndex < currentPageImages.length) {
-                    currentModalIndex = catalogoCurrentPage * itemsPerPage + newIndex;
+                    if (currentSection === 'catalogo') {
+                        currentModalIndex = catalogoCurrentPage * itemsPerPage + newIndex;
+                        modalImage.alt = `Produto ${currentModalIndex + 1}`;
+                    } else if (currentSection === 'desfiles') {
+                        currentModalIndex = desfilesCurrentPage * desfilesItemsPerPage + newIndex;
+                        modalImage.alt = `Desfile ${currentModalIndex + 1}`;
+                    }
                     modalImage.src = currentPageImages[newIndex];
-                    modalImage.alt = `Produto ${currentModalIndex + 1}`;
                     updateModalButtons();
                 }
             }
@@ -906,7 +760,7 @@
                         img.style.cursor = 'pointer';
                         img.addEventListener('click', function() {
                             const globalIndex = catalogoCurrentPage * itemsPerPage + index;
-                            openModal(globalIndex);
+                            openModal(globalIndex, 'catalogo');
                         });
                     }
                 });
@@ -1002,7 +856,7 @@
                         img.style.cursor = 'pointer';
                         img.addEventListener('click', function() {
                             const globalIndex = desfilesCurrentPage * desfilesItemsPerPage + index;
-                            openModal(globalIndex);
+                            openModal(globalIndex, 'desfiles');
                         });
                     }
                 });
