@@ -380,14 +380,11 @@
             <div class="footer-top">
                 <div class="footer-logos">
                     <div class="cagece-logo-container">
-                        <span class="program-label-footer">programa</span>
                         <div class="cagece-logo-content">
                             <img src="Hotsite Fotos/Logo Cagece.png" alt="Logo Cagece" class="footer-logo-cagece">
-                            <span class="cagece-text">Cagece</span>
                         </div>
                     </div>
                     <div class="reciclocidades-logo-container">
-                        <span class="program-label-footer">programa</span>
                         <img src="Hotsite Fotos/Logo Reciclocidades.png" alt="Logo Reciclocidades" class="footer-logo-reciclocidades">
                     </div>
                 </div>
@@ -536,8 +533,30 @@
             
             let catalogoCurrentPage = 0;
             let isVideoPage = true;
-            const itemsPerPage = 8;
-            const totalPages = Math.ceil(catalogoImages.length / itemsPerPage);
+            
+            // Função para determinar itens por página baseado no tamanho da tela
+            function getItemsPerPage() {
+                return window.innerWidth <= 768 ? 2 : 8;
+            }
+            
+            let itemsPerPage = getItemsPerPage();
+            let totalPages = Math.ceil(catalogoImages.length / itemsPerPage);
+            
+            // Atualizar itens por página quando a janela for redimensionada
+            window.addEventListener('resize', function() {
+                const newItemsPerPage = getItemsPerPage();
+                if (newItemsPerPage !== itemsPerPage) {
+                    itemsPerPage = newItemsPerPage;
+                    totalPages = Math.ceil(catalogoImages.length / itemsPerPage);
+                    // Ajustar página atual se necessário
+                    if (catalogoCurrentPage >= totalPages) {
+                        catalogoCurrentPage = totalPages - 1;
+                    }
+                    if (!isVideoPage) {
+                        showCatalogoPage(catalogoCurrentPage);
+                    }
+                }
+            });
             
             function showVideoPage() {
                 videoPage.classList.add('active');
@@ -804,8 +823,28 @@
             const desfilesPageInfo = document.getElementById('desfilesPageInfo');
             
             let desfilesCurrentPage = 0;
-            const desfilesItemsPerPage = 8;
-            const desfilesTotalPages = Math.ceil(desfilesImages.length / desfilesItemsPerPage);
+            
+            // Função para determinar itens por página baseado no tamanho da tela
+            function getDesfilesItemsPerPage() {
+                return window.innerWidth <= 768 ? 2 : 8;
+            }
+            
+            let desfilesItemsPerPage = getDesfilesItemsPerPage();
+            let desfilesTotalPages = Math.ceil(desfilesImages.length / desfilesItemsPerPage);
+            
+            // Atualizar itens por página quando a janela for redimensionada
+            window.addEventListener('resize', function() {
+                const newItemsPerPage = getDesfilesItemsPerPage();
+                if (newItemsPerPage !== desfilesItemsPerPage) {
+                    desfilesItemsPerPage = newItemsPerPage;
+                    desfilesTotalPages = Math.ceil(desfilesImages.length / desfilesItemsPerPage);
+                    // Ajustar página atual se necessário
+                    if (desfilesCurrentPage >= desfilesTotalPages) {
+                        desfilesCurrentPage = desfilesTotalPages - 1;
+                    }
+                    showDesfilesPage(desfilesCurrentPage);
+                }
+            });
             
             function showDesfilesPage(page) {
                 desfilesGrid.innerHTML = '';

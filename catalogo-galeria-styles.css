@@ -1073,13 +1073,13 @@
     }
     
     .catalogo-container {
-        height: 550px;
+        height: 350px;
     }
     
     .catalogo-grid {
         gap: 20px;
         max-width: 1000px;
-        padding: 50px 0;
+        padding: 20px 0;
     }
     
     .catalogo-item {
@@ -1128,13 +1128,13 @@
     }
     
     .desfiles-container {
-        height: 650px;
+        height: 400px;
     }
     
     .desfiles-grid {
         gap: 20px;
         max-width: 1000px;
-        padding: 70px 0;
+        padding: 30px 0;
     }
     
     .desfiles-item {
@@ -1204,7 +1204,7 @@
     }
     .catalogo-grid,
     .galeria-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         max-width: 800px;
     }
@@ -1274,6 +1274,7 @@
     }
     
     .desfiles-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 18px;
         max-width: 800px;
         padding: 65px 0;
@@ -1358,13 +1359,13 @@
     }
     
     .catalogo-container {
-        height: 450px;
+        height: 320px;
     }
     
     .catalogo-grid {
         gap: 15px;
         max-width: 600px;
-        padding: 40px 0;
+        padding: 15px 0;
     }
     
     .catalogo-item {
@@ -1413,13 +1414,14 @@
     }
     
     .desfiles-container {
-        height: 550px;
+        height: 380px;
     }
     
     .desfiles-grid {
+        grid-template-columns: repeat(2, 1fr);
         gap: 15px;
         max-width: 600px;
-        padding: 60px 0;
+        padding: 20px 0;
     }
     
     .desfiles-item {
@@ -1496,13 +1498,13 @@
     }
     
     .catalogo-container {
-        height: 400px;
+        height: 300px;
     }
     
     .catalogo-grid {
         gap: 12px;
         max-width: 500px;
-        padding: 35px 0;
+        padding: 12px 0;
     }
     
     .catalogo-item {
@@ -1551,13 +1553,13 @@
     }
     
     .desfiles-container {
-        height: 500px;
+        height: 350px;
     }
     
     .desfiles-grid {
         gap: 12px;
         max-width: 500px;
-        padding: 55px 0;
+        padding: 18px 0;
     }
     
     .desfiles-item {
